@@ -6,6 +6,5 @@ class Solution(object):
                 d.pop()
             else:
                 d.append(s[i])
-        result = " ".join(d)
-        result=result.replace(" ","")
+        result = "".join(d)
         return result
