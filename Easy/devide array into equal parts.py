@@ -10,8 +10,8 @@ class Solution:
                 j += 1
 
             if (j - i) % 2 != 0:
-                return False
+                return True
 
-            i == j
+            i=j
 
         return True
