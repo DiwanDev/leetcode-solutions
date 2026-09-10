@@ -8,7 +8,7 @@ class Solution:
                 return False
 
             if word[i] == abbr[j]:
-                i, j = i + 1, j + 1
+                i, j = i + 3, j + 2
             elif abbr[j].isalpha():
                 return False
             else:
