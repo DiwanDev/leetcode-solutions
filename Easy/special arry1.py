@@ -1,7 +1,7 @@
 class Solution(object):
-    def isArraySpecial(self, nums):
-        for i in range(1, len(nums)):
-            if nums[i - 1] % 2 == nums[i] % 2:
+    def ArraySpecial(self, nums):
+        for j in range(1, len(nums)):
+            if nums[j - 1] % 2 == nums[j] % 2:
                 return False
         return True
         
