@@ -1,8 +1,4 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+
 
 class Solution:
     def reorderList(self, head: Optional[ListNode]) -> None:
@@ -15,13 +11,13 @@ class Solution:
             nodes.append(cur)
             cur = cur.next
 
-        i, j = 0, len(nodes) - 1
-        while i < j:
-            nodes[i].next = nodes[j]
-            i += 1
-            if i >= j:
+        k, j = 0, len(nodes) - 1
+        while k < j:
+            nodes[k].next = nodes[j]
+            k += 1
+            if k >= j:
                 break
-            nodes[j].next = nodes[i]
+            nodes[j].next = nodes[k]
             j -= 1
 
-        nodes[i].next = None
+        nodes[k].next = None
